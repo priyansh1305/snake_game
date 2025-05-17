@@ -1,6 +1,7 @@
 #include<iostream>
 #include<conio.h>
 #include<windows.h>
+#include <ctime>
 using namespace std;
 // height and width of the boundary
 const int width = 80;
@@ -179,6 +180,7 @@ void UserInput() {
 
 // main function / game looping function
 int main() {
+    srand(time(0));
     string playerName;
     cout << "Enter Your Name: ";
     cin >> playerName;
